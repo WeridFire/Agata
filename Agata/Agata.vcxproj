@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Agata.cpp" />
     <ClCompile Include="ChessBoard.cpp" />
+    <ClCompile Include="knights.cpp" />
     <ClCompile Include="pawns.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="utility.cpp" />
@@ -136,6 +137,7 @@
   <ItemGroup>
     <ClInclude Include="ChessBoard.h" />
     <ClInclude Include="Direction.h" />
+    <ClInclude Include="knights.h" />
     <ClInclude Include="pawns.h" />
     <ClInclude Include="Square.h" />
     <ClInclude Include="utility.h" />
