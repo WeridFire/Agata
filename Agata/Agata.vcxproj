@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Agata.cpp" />
+    <ClCompile Include="bishops.cpp" />
     <ClCompile Include="ChessBoard.cpp" />
     <ClCompile Include="knights.cpp" />
     <ClCompile Include="pawns.cpp" />
@@ -135,6 +136,7 @@
     <ClCompile Include="utility.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bishops.h" />
     <ClInclude Include="ChessBoard.h" />
     <ClInclude Include="Direction.h" />
     <ClInclude Include="knights.h" />

@@ -1,6 +1,4 @@
-#ifndef SQUARE_H
-#define SQUARE_H
-
+#pragma once
 #include <cstdint>
 
 /*  Pezzi bianchi:
@@ -35,4 +33,4 @@ enum class Square : uint64_t {
 // Dichiarazione della funzione
 uint64_t squareToBitboard(Square square);
 
-#endif // SQUARE_H
+

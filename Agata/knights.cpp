@@ -13,6 +13,11 @@
 //            -17  -15
 //        soSoWe    soSoEa
 
+const uint64_t notAFile = 0xFEFEFEFEFEFEFEFEULL;  // Maschera per evitare l'uscita dal file A (colonna più a sinistra)
+const uint64_t notABFile = 0xFCFCFCFCFCFCFCFCULL;  // Maschera per evitare l'uscita dai file A e B
+const uint64_t notHFile = 0x7F7F7F7F7F7F7F7FULL;  // Maschera per evitare l'uscita dal file H (colonna più a destra)
+const uint64_t notGHFile = 0x3F3F3F3F3F3F3F3FULL;  // Maschera per evitare l'uscita dai file G e H
+
 uint64_t noNoEa(uint64_t b) {
     return (b << 17) & notAFile;  // Movimento a nord-nord-est
 }

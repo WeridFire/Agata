@@ -1,5 +1,5 @@
-#include <cstdint>
 #pragma once
+#include <cstdint>
 
 //Filling
 uint64_t nortFill(uint64_t gen);
