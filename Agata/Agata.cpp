@@ -4,12 +4,14 @@
 #include "utility.h"
 #include "knights.h"
 #include "pawns.h"
+#include "bishops.h"
+#include "queens.h"
 
 int main()
 {
     ChessBoard c;
     
-    c.printBitboard(getKnightMoves(c.whiteKnights));
+    c.printBitboard(getQueenAttackMask((int)Square::C5));
 
     return 0;
 }

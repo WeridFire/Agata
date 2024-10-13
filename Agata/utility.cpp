@@ -3,6 +3,16 @@
 //COSTANTI
 const uint64_t notAFile = 0xfefefefefefefefe; // ~0x0101010101010101
 const uint64_t notHFile = 0x7f7f7f7f7f7f7f7f; // ~0x8080808080808080
+static const int index64[64] = {
+        0, 1, 2, 7, 3, 13, 8, 19,
+        4, 25, 14, 28, 9, 34, 20, 40,
+        5, 17, 26, 38, 15, 46, 29, 48,
+        10, 31, 35, 54, 21, 50, 41, 57,
+        63, 6, 12, 18, 24, 27, 33, 39,
+        16, 37, 45, 47, 30, 53, 49, 56,
+        62, 11, 23, 32, 36, 44, 52, 55,
+        61, 22, 43, 51, 60, 42, 59, 58
+};
 
 
 //FUNZIONI
@@ -99,3 +109,12 @@ uint64_t rotate90clockwise(uint64_t x) {
     return flipVertical(flipDiagA1H8(x));
 }
 
+//Bitscan
+//ritorna indice primo bit settato ad uno di bb
+int bitScanForward(uint64_t bb) {
+    if (bb == 0) return -1; // Caso speciale per bb = 0
+    uint64_t isolatedBit = bb & ~bb; // Isola il bit meno significativo impostato a 1
+    uint64_t debruijn64 = 0x03f79d71b4cb0a89ULL;
+    int index = index64[(isolatedBit * debruijn64) >> 58];
+    return index;
+}

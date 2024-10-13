@@ -61,7 +61,7 @@ uint64_t fileFill(uint64_t gen) {
     return nortFill(gen) | soutFill(gen);
 }
 
-// WHITE PUSH
+// WHITE PUSH to be used whith nortfill
 uint64_t wSinglePushTargets(uint64_t wpawns, uint64_t empty) {
     return nortOne(wpawns) & empty;
 }

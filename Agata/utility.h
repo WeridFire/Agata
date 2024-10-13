@@ -27,3 +27,5 @@ uint64_t flipDiagA1H8(uint64_t x);
 uint64_t flipDiagA8H1(uint64_t x);
 uint64_t rotate90clockwise(uint64_t x);
 
+//Bitscan
+int bitScanForward(uint64_t bb);
