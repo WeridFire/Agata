@@ -118,3 +118,11 @@ int bitScanForward(uint64_t bb) {
     int index = index64[(isolatedBit * debruijn64) >> 58];
     return index;
 }
+
+//Masks
+uint64_t getHigherMask(int sq) {
+    return 0xFFFFFFFFFFFFFFFFULL << sq;
+}
+uint64_t getLowerMask(int sq) {
+    return 0xFFFFFFFFFFFFFFFFULL >> (63-sq);
+}

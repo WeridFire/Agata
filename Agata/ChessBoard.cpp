@@ -127,3 +127,6 @@ void ChessBoard::printAll()  {
     std::cout << "Black King:\n";
     printBitboard(blackKing);
 }
+
+
+//MOVIMENTI

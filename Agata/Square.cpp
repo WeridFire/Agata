@@ -23,3 +23,6 @@
 uint64_t squareToBitboard(Square square) {
     return 1ULL << static_cast<uint64_t>(square);
 }
+inline int toInt(Square sq) {
+    return static_cast<int>(sq);
+}

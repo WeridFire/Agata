@@ -29,3 +29,7 @@ uint64_t rotate90clockwise(uint64_t x);
 
 //Bitscan
 int bitScanForward(uint64_t bb);
+
+//Masks
+uint64_t getHigherMask(int sq);
+uint64_t getLowerMask(int sq);

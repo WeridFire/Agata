@@ -128,23 +128,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Agata.cpp" />
-    <ClCompile Include="bishops.cpp" />
     <ClCompile Include="ChessBoard.cpp" />
     <ClCompile Include="knights.cpp" />
     <ClCompile Include="pawns.cpp" />
-    <ClCompile Include="queens.cpp" />
-    <ClCompile Include="rooks.cpp" />
+    <ClCompile Include="slidingpieces.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="utility.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bishops.h" />
     <ClInclude Include="ChessBoard.h" />
     <ClInclude Include="Direction.h" />
     <ClInclude Include="knights.h" />
     <ClInclude Include="pawns.h" />
-    <ClInclude Include="queens.h" />
-    <ClInclude Include="rooks.h" />
+    <ClInclude Include="slidingpieces.h" />
     <ClInclude Include="Square.h" />
     <ClInclude Include="utility.h" />
   </ItemGroup>

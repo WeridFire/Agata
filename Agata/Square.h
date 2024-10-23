@@ -33,4 +33,4 @@ enum class Square : int {
 // Dichiarazione della funzione
 uint64_t squareToBitboard(Square square);
 
-
+inline int toInt(Square sq);

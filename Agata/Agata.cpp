@@ -4,14 +4,13 @@
 #include "utility.h"
 #include "knights.h"
 #include "pawns.h"
-#include "bishops.h"
-#include "queens.h"
+#include "slidingpieces.h"
 
-int main()
-{
-    ChessBoard c;
-    
-    c.printBitboard(getQueenAttackMask((int)Square::C5));
+int main(){
+
+    ChessBoard c = ChessBoard();
+    c.printBitboard(queen_moves(squareToBitboard(Square::D6) | squareToBitboard(Square::E3), Square::C5));
+
 
     return 0;
 }

@@ -33,13 +33,7 @@
     <ClCompile Include="knights.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="bishops.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
-    <ClCompile Include="rooks.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
-    <ClCompile Include="queens.cpp">
+    <ClCompile Include="slidingpieces.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,13 +56,7 @@
     <ClInclude Include="knights.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="bishops.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
-    <ClInclude Include="rooks.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
-    <ClInclude Include="queens.h">
+    <ClInclude Include="slidingpieces.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
